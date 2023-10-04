@@ -4,12 +4,13 @@ import nltk
 import requests
 from bs4 import BeautifulSoup
 from flask import Flask, jsonify, request
+from flask_cors import CORS  # Importa Flask-CORS
 from nltk.corpus import stopwords
 from nltk.stem import SnowballStemmer
 from nltk.tokenize import word_tokenize
 
 app = Flask(__name__)
-
+CORS(app)
 
 # Lista de URLs de las páginas web
 urls = [
