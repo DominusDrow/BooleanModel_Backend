@@ -1,0 +1,7 @@
+Flask
+requests
+bs4
+Gunicorn
+nltk
+
+
